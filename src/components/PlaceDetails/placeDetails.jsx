@@ -11,7 +11,7 @@ const PlaceDetails = ({place,select,refProp  })=>{
     const classes = useStyles();
     if (select) refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     return (
-        <Card elevation={6} ref={refProp}>
+        <Card elevation={6}>
             <CardMedia
             style={{height:350}}
             image={place.photo ? place.photo.images.large.url :'https://media-cdn.tripadvisor.com/media/photo-s/12/75/fa/2b/restauracja-makalu-nepal.jpg'}
